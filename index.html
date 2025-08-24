@@ -1,79 +1,105 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Xiaoyu Liu</title>
-  <!-- Font: change --font and --base-size below to customize globally -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --font: 'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      --base-size: 10.5pt; /* Global font size */
-      --align-offset: 0px; /* Adjust this to move text center relative to photo center */
-    }
-    html, body { margin: 0; padding: 0; }
-    body { font-family: var(--font); font-size: var(--base-size); line-height: 1.6; color: #0f172a; background: #ffffff; }
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    /* Page width behavior */
-    .wrap { max-width: 66.666%; margin: 0 auto; padding: 16px; }
-    @media (max-width: 1200px) { .wrap { max-width: 90%; } }
-    @media (max-width: 800px) { .wrap { max-width: 100%; padding: 12px; } }
+    <title>Xiaoyu Liu</title>
 
-    /* Top area: two side-by-side sections */
-    .top { display: flex; align-items: center; gap: 20px; margin-top: 30px; }
-    .intro { flex: 1 1 0; min-width: 240px; position: relative; top: var(--align-offset); }
+    <meta name="author" content="Xiaoyu Liu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
 
-    /* Photo box with size limits */
-    .photo-box { flex: 0 0 auto; width: clamp(160px, 25vw, 260px); height: clamp(200px, 33vw, 350px); border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; background: #f3f4f6; display: grid; place-items: center; }
-    .photo-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Xiaoyu Liu
+                </p>
+                <p>
+                I am an Assistant Professor in the <a href="https://www.usf.edu/engineering/me/index.aspx" style="color:#2984D1;">Department of Mechanical and Aerospace Engineering</a> at the University of South Florida. Prior to this, I was a postdoctoral researcher at the NASA-funded <a href="https://www.purdue.edu/rethi/" style="color:#2984D1;">RETH Institute</a>, where I focused on human and robotic agent modeling and analysis in space missions. I hold a Ph.D. and M.S. in Mechanical Engineering from Purdue University, where I had the privilege of being advised by <a href="https://engineering.purdue.edu/ME/People/ptProfile?id=57291" style="color:#2984D1;">Prof. Shirley J. Dyke</a>, and a B.S. in Mechanical Engineering from Xi’an Jiaotong University.
+                </p>
+                <p style="text-align:center">
+                  <a href="https://scholar.google.com/citations?hl=en&user=Uo2HX8oAAAAJ&view_op=list_works&sortby=pubdate" style="color:#2984D1;">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://www.usf.edu/engineering/me/people/index.aspx#:~:text=Thin%20Film%20Technology-,Xiaoyu%20Liu,-Assistant%20Professor" style="color:#2984D1;">ME@MAE</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <img style="width:100%;max-width:100%;object-fit:
+                 cover; border-radius: 2%;" alt="profile photo" src="images/Photo.png">
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>About Research</h2>
+                <p>
+                My main research interests focus on applying machine learning and mathematical methods to address challenges in human–robot teaming for space missions.
+                </p>
+                <p>
+                I am currently recruiting Ph.D. and M.S. students starting in Spring/Fall 2026. If you are interested in machine learning/multi-agent teaming/space mission planning, send me an email at xiaoyuliu@usf.edu!
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
 
-    /* Optional paragraph size tweaks */
-    .text-sm { font-size: 0.9em; }
-    .text-md { font-size: 1em; }
-    .text-lg { font-size: 1.15em; }
 
-    /* Small widths adjustments */
-    @media (max-width: 640px) {
-      .top { gap: 14px; }
-      .intro { min-width: 0; }
-    }
-    @media (max-width: 360px) {
-      .top { flex-direction: column; }
-      .photo-box { width: clamp(160px, 60vw, 260px); height: clamp(200px, 75vw, 350px); }
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <section class="top">
-      <!-- Left: self introduction paragraph (placeholder text now) -->
-      <div class="intro">
-        <h1 style="font-size: 2em; font-weight: bold; text-align: center; margin: 0 0 12px 0;">
-          Xiaoyu Liu
-        </h1>
-        <p class="text-md">
-          I am an Assistant Professor in the <a href="https://www.usf.edu/engineering/me/index.aspx" style="color:#2984D1;">Department of Mechanical and Aerospace Engineering</a> at the University of South Florida. Prior to this, I was a postdoctoral researcher at the NASA-funded <a href="https://www.purdue.edu/rethi/" style="color:#2984D1;">RETH Institute</a>, where I focused on human and robotic agent modeling and analysis in space missions. I hold a Ph.D. and M.S. in Mechanical Engineering from Purdue University, where I had the privilege of being advised by Prof. Shirley J. Dyke, and a B.S. in Mechanical Engineering from Xi’an Jiaotong University.
-        </p>
-        <p class="text-md">
-          My main research interests focus on applying machine learning and mathematical methods to address challenges in human–robot teaming for space missions.
-        </p>
-        <p class="text-md">
-          I am currently recruiting Ph.D. and M.S. students starting in Spring 2026. If you are interested in machine learning/multi-agent teaming/space mission planning, send me an email at xiaoyuliu@usf.edu!
-        </p>
-        <p style="text-align: center; margin: 0 0 12px 0;">
-          <a href="https://scholar.google.com/citations?hl=en&user=Uo2HX8oAAAAJ&view_op=list_works&sortby=pubdate" style="color:#2984D1;">Google Scholar</a>/
-          <a href="https://www.usf.edu/engineering/me/people/index.aspx#:~:text=Thin%20Film%20Technology-,Xiaoyu%20Liu,-Assistant%20Professor" style="color:#2984D1;">ME@MAE</a>
-        </p>
-      </div>
+   <!--       
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-      <!-- Right: photo placeholder. Replace the src below with your image URL -->
-      <div class="photo-box" aria-label="Your portrait placeholder">
-        <img id="portrait" src="./Images/Photo.png" alt="Your portrait" />
-      </div>
-    </section>
-  </div>
-</body>
+  
+            <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <img src='images/solar_web.png' width=100%>
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="papertitle">Paper title xxxxxx</span>
+                <br>
+                <strong>Author 1</strong>, Author 2
+                <br>
+                <em>Journal</em>, 2025
+                <br>
+                Description
+                <p>
+
+                </p>
+                <p style="font-size:smaller">citation
+                </p>
+              </td>
+            </tr> 
+
+
+          </tbody></table>
+-->
+            
+          </tbody></table>
+
+
+
+         <table style="width:calc(100% - 10px);border:0;border-spacing:0;border-collapse:separate;
+                      margin:0;position:fixed;bottom:10px;left:0;right:10px;">
+          <tbody>
+            <tr>
+              <td style="padding:0">
+                <p style="text-align:right;font-size:small;">
+                  Design and source code from <a href="https://jonbarron.info/">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
